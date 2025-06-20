@@ -57,4 +57,10 @@ print(get_random_secret_key())
 exit()
 ```
 
+### - Article:
+```
+Follow this article for step-wise guide.
+https://medium.com/@diarrascar/containerize-django-web-app-27a688cb948b
+
+
 
