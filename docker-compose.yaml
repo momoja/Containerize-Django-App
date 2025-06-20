@@ -1,10 +1,10 @@
-name: djangoapp-containerize
+name: djangoapp-containerize #Name of the Compose project (optional, for reference)
 
 services:
-  app:
-    image: my-docker-image
-    container_name: my-docker-container
+  app:   #Define the service named "app"
+    image: my-docker-image  #specify what Docker image to use 
+    container_name: my-docker-container  # Set a custom name for the container
     ports:
-      - "8001:8000"
+      - "8001:8000"  # Map host port 8001 to container port 8000 (usually Django default)
     volumes:
-      - .:/app
+      - .:/app  # Mount current directory (host) to /app in the container for live code sync
